@@ -32,6 +32,8 @@ Python: NumPy, SciPy, pandas, Matplotlib, Seaborn
 
 ## Repository Contents
 - `stats_project_fisher_scoring_mcmc.ipynb`: full analysis - algorithm implementation, both dataset applications, diagnostics, and results
+- `data/creditcard.csv`: credit card approval dataset (logistic regression)
+- `data/azcabgptca.csv`: hospital length-of-stay dataset (Poisson regression)
 - `report.pdf`: compiled written report
 - `report/report.tex`: LaTeX source of the report
 - `mcmc_trace_acf_procedure.png` and `mcmc_trace_acf_income.png` : MCMC diagnostic plots (trace + ACF) for the income coefficient (credit card model) and procedure coefficient (hospital stay model)
