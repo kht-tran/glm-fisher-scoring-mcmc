@@ -2,8 +2,12 @@
 
 ## Overview
 This project 
-- implements two estimation approaches for Generalized Linear Models (GLMs) from scratch: (i) Fisher Scoring (a Newton-type maximum likelihood algorithm) and (ii) Random Walk Metropolis-Hastings MCMC (a Bayesian sampling approach) and
-- compares their results on two real-world datasets: credit card approval (logistic regression) and hospital length of stay after cardiac procedures (Poisson regression, log link).
+- implements two estimation approaches for Generalized Linear Models (GLMs) from scratch:
+  - Fisher Scoring (a Newton-type maximum likelihood algorithm) and
+  - Random Walk Metropolis-Hastings MCMC (a Bayesian sampling approach) and
+- compares their results on two real-world datasets:
+  - credit card approval (logistic regression) and
+  - hospital length of stay after cardiac procedures (Poisson regression, log link).
 
 *[Completed as part of a team assignment. I led the implementation of the Fisher Scoring and MCMC algorithms, and reviewed and revised the written report.]*
 
@@ -20,8 +24,8 @@ This project
 - Fisher Scoring converged in 7 iterations (credit card model) and 15 iterations (hospital stay model); both showed stable, well-behaved convergence
 - MCMC chains for both datasets showed stable trace plots and rapidly decaying autocorrelation (within ~7–10 lags), indicating good mixing
 - Fisher Scoring (MLE) and MCMC (Bayesian posterior mean) produced highly consistent coefficient estimates across both datasets, with overlapping confidence/credible intervals
-- **Credit card approval**: driven mainly by creditworthiness indicators — each derogatory report reduces approval odds by ~82.7%, each active account increases odds by ~14.1%, and self-employment reduces odds by ~53.1%
-- **Hospital length of stay**: driven mainly by clinical factors — undergoing a CABG procedure (vs. PTCA) is associated with a ~209.6% increase in expected stay duration; emergency/urgent admission increases expected stay by ~20.9%; male patients have ~10.1% shorter expected stays than female patients
+- **Credit card approval**: driven mainly by creditworthiness indicators. Each derogatory report reduces approval odds by ~82.7%, each active account increases odds by ~14.1%, and self-employment reduces odds by ~53.1%
+- **Hospital length of stay**: driven mainly by clinical factors. Undergoing a CABG procedure (vs. PTCA) is associated with a ~209.6% increase in expected stay duration; emergency/urgent admission increases expected stay by ~20.9%; male patients have ~10.1% shorter expected stays than female patients
 
 ## Tools Used
 Python: NumPy, SciPy, pandas, Matplotlib, Seaborn
